@@ -94,3 +94,8 @@ if you need to go up multiple levels in the directory struture you can use addit
 in modu;e 2 we can import module3 using two dots which represents the parent directory that module3 is in.
 relative imports are greate if you hvae lots of code files that are related but it can be unclear to other deelopers which modules are kept where.
 '''
+from .module import function1
+from ..import module3
+
+function()
+module3.function1()
