@@ -1,0 +1,20 @@
+ABSOLUTE IMPORTS 
+- an absolute import specifies the module to be imported using hte full path from the project root directory.
+
+what are the pros and cons of absolute paths 
+- absolute imports remain valid even if the current location of the import statements changes and they make it 
+easy to see exaclty where the resources is coming from.
+
+when to NOT use absolute imports 
+- when we want to have import a module from a long nested direcotory structure. the import statement would be huge.
+
+
+RELATIVE IMPORTS.
+the reason to use relative imports exist is bacasue they allow us to rearragne the structure of large packages without haveing to edit subpackages.
+if we rearrage a large package with absolue imports we have to change all the paths in every files import statements to match the new location.
+note that 
+realtive imports only work when you use them in a module which is why we include the -m argument.
+relative imports cannot be invoked in scripts.
+
+relative import are great of you have lots of cod files that are related, but it can be unclear to other developers 
+which module is kept where.
